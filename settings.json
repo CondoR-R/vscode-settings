@@ -1,0 +1,70 @@
+{
+    // установка дефолтного размера для редактора
+    "window.zoomLevel": 1,
+    // Шрифт
+    "editor.fontSize": 18,
+    // Иконки структуры проекта
+    "workbench.iconTheme": "material-icon-theme",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    // sidebar справа
+    "workbench.sideBar.location": "right",
+    // убрать панель снизу
+    "workbench.statusBar.visible": false,
+    // убираем виджет справа для скролла
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.minimap.enabled": false,
+    "editor.matchBrackets": "never",
+    "editor.occurrencesHighlight": "off",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.stickyScroll.enabled": false,
+    // убираем отображение пути к файлу вверху
+    "breadcrumbs.enabled": false,
+    // установка длины одного tab
+    "editor.tabSize": 4,
+    // настройка курсора
+    "editor.cursorBlinking": "solid",
+    // по дефолту открывать пустую страницу
+    "workbench.startupEditor": "none",
+    // добавлять пустую строку в конце файла чтобы избежать ошибки
+    "files.insertFinalNewline": true,
+    // отключаем окно с помощью для новичка
+    "workbench.tips.enabled": false,
+    // убираем лампочку при наведении на код
+    "editor.lightbulb.enabled": "off",
+    // отключение автообновлений VScodium
+    "update.mode": "none",
+    // автосохранение после корткой паузы
+    "files.autoSave": "afterDelay",
+    // настройка плагина todo
+    "todohighlight.isEnable": true,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "editor.renderWhitespace": "all",
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "always"
+        }
+    },
+    "python.createEnvironment.trigger": "off",
+    "notebook.lineNumbers": "on",
+    "workbench.colorTheme": "Kanagawa Wave"
+}
